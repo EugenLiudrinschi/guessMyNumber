@@ -5,10 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
-  <title>Guess the Number</title>
+  <title>Game - Guess my number</title>
 </head>
 <body>
-  
+  <header>
+    <h1>Guess the Number</h1>
+    <p class="between">(Between 1 and <span class="highest">20</span>)</p>
+    <div class="button-container">
+      <button class="button start">Start Standart  Game</button>
+      <button class="button max-number">Enter max number</button>
+    </div>
+    <div class="range-container">
+      <input type="number" class="input-max">
+      <p class="tooltip">Enter a number from 1 to 200</p>
+      <button class="button continue">Continue</button>
+    </div>
+    <button class="button restart">Restart</button>
+  </header>
+  <main>
+    <section class="left">
+      <input type="number" min="0" class="guess">
+      <button type="button" class="button check">Check</button>
+    </section>
+    <section class="middle">
+      <p class="number">X</p>
+    </section>
+    <section class="right">
+      <p class="message">Let's go!</p>
+      <p>Attempts: <span class="attempt">5</span></p>
+      <p>Entered numbers: <span class="tryes"></span></p>
+    </section>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
