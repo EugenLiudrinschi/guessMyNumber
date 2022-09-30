@@ -5,7 +5,7 @@ const maxNumberInput = document.querySelector(".input-max");
 const mainElement = document.querySelector("main");
 const restartButton = document.querySelector(".restart");
 const rangeContainer = document.querySelector(".range-container");
-const ButtonContainer = document.querySelector(".button-container");
+const buttonContainer = document.querySelector(".button-container");
 const attemptHTML = document.querySelector(".attempt");
 const between = document.querySelector(".between");
 const highest = document.querySelector(".highest");
@@ -34,12 +34,12 @@ class Game {
 
 class UI {
   static displayRangeButton() {
-    displayToggle(ButtonContainer, "none");
+    displayToggle(buttonContainer, "none");
     displayToggle(rangeContainer, "block");
   }
 
   static startDefaultGame() {
-    displayToggle(ButtonContainer, "none");
+    displayToggle(buttonContainer, "none");
   }
 
   static displayGameBoard() {
@@ -52,7 +52,7 @@ class UI {
   static restartGame() {
     displayToggle(mainElement, "none");
     displayToggle(restartButton, "none");
-    displayToggle(ButtonContainer, "flex");
+    displayToggle(buttonContainer, "flex");
   }
 }
 //Initiate Game instance
